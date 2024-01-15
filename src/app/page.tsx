@@ -6,7 +6,7 @@ import React, { FC } from "react";
 const Homepage: FC = () => {
   return (
     <div className="flex flex-col text-white ">
-      <div className=" bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 lg:w-full  lg:h-[610px] h-[700px]">
+      <div className=" bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 lg:w-full  lg:h-[610px] ">
         <div className="pt-6">
           <Navbar />
         </div>
