@@ -23,14 +23,14 @@ const Navbar: FC = () => {
   ];
 
   return (
-    <div className="pb-3 hidden md:flex justify-center items-center pt-">
-      <div className="w-full md:w-[1170px] flex justify-center items-center gap-7 lg:px-0 px-5">
+    <div className="pb-3 flex justify-center items-center pt-">
+      <div className="w-full flex justify-center items-center lg:gap-7 gap-3 px-5 ">
         {routes.map((val, i) => {
           return (
             <Link
               key={i}
               href={val.path}
-              className={` font-normal text-2xl border-b-[2px] ${
+              className={` font-normal lg:text-2xl text-sm lg:border-b-[2px] border-b-[1px] ${
                 val.path === pathname
                   ? "border-b-[#ffffff] text-white"
                   : "border-b-white text-[#2B2D42]"

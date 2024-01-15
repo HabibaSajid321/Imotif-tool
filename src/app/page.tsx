@@ -6,19 +6,16 @@ import React, { FC } from "react";
 const Homepage: FC = () => {
   return (
     <div className="flex flex-col text-white ">
-      <div className=" bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 w-full h-[610px]">
+      <div className=" bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 lg:w-full  h-[610px]">
         <div className="pt-6">
           <Navbar />
         </div>
         <div className="flex flex-col items-center text-center">
-          <p className="text-white text-5xl font-semibold leading-relaxed pt-24">
-            MD-TSPC4: Computational Method for Predicting the Thermal Stability
-            of I-Motif
+          <p className="text-white lg:text-5xl text-[30px] lg:px-5 px-6 font-semibold leading-relaxed pt-24">
+            MD-TSPM: Thermal Stability Prediction Method for Cancer Associated
+            I-motifs
           </p>
-          <p className="text-[#c6c5c8] text-xl px-36 ">
-            Article in International Journal of Molecular Sciences · December
-            2021
-          </p>
+
           <div></div>
         </div>
       </div>
