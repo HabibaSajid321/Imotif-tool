@@ -1,28 +1,62 @@
+"use client";
 import AboutImage from "@/components/aboutImage/AboutImage";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import React, { FC } from "react";
-
+import Image from "next/image";
+import Usdalogo from "../../public/assets/usda.png";
+import Uaflogo from "../../public/assets/uaf1.png";
+import { FaArrowRight } from "react-icons/fa";
+import Homeobj from "@/components/home/Homeobj";
+import Link from "next/navigation";
+import router, { useRouter } from "next/navigation";
 const Homepage: FC = () => {
+  const router = useRouter();
+  const handleClick = () => {
+    return router.push("/analyzer");
+  };
   return (
     <div className="flex flex-col text-white ">
-      <div className=" bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 w-full  md:h-[610px] h-[600px]">
-        <div className="pt-6">
+      <div className=" bg-white md:h-[610px] h-[600px]">
+        <div className="">
           <Navbar />
         </div>
+        <div className="flex justify-between ">
+          <Image
+            src={Uaflogo}
+            alt="logo"
+            loading="eager"
+            className="md:w-[100px] w-[70px] md:h-[100px] h-[60px] pt-4"
+          />
+
+          <Image
+            src={Usdalogo}
+            alt="logo"
+            loading="eager"
+            className="md:w-[100px] w-[70px] md:h-[100px] h-[60px]"
+          />
+        </div>
+
         <div className="flex flex-col items-center text-center justify-center pt-40">
-          <p className="text-white md:text-4xl text-[20px] md:px-12 px-6  font-semibold leading-relaxed ">
-            MD-TSPM: Thermal Stability Prediction Method for Cancer Associated
-            I-motifs
+          <p className="text-black md:text-4xl text-[20px] md:px-12 px-6  font-semibold leading-relaxed ">
+            MD-TSPM: Thermal Stability Prediction Method for I-motif
           </p>
 
           <div className="pt-20">
-            <button className=" bg-slate-400 text-black md:text-2xl text-lg  md:px-10 px-6">
-              Go to analyze
+            <button
+              className=" flex items-center  bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 w-full text-[#efe8fd] md:text-2xl text-lg 
+                md:px-10 px-6 rounded-lg hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black "
+              onClick={handleClick}
+            >
+              Go to Submission portal
+              <span className="pl-4">
+                <FaArrowRight />
+              </span>
             </button>
           </div>
         </div>
       </div>
+
       <div className="flex flex-col items-center justify-center md:gap-5 ">
         <h1 className="text-[#1f7f6d]  md:text-3xl text-xl font-medium ">
           ABOUT BIOVIS-HUB
@@ -39,17 +73,9 @@ const Homepage: FC = () => {
           A Web Portal for Bioinformatics Visualization Tools
         </p>
       </div>
-      <div className="flex justify-center items-center pt-12 ">
-        <iframe
-          className="md:w-[760px] w-[400px] md:h-[400px] h-[200px] "
-          // width="760"
-          // height="400"
-          src="https://www.youtube.com/embed/kGihh-8MI4U?si=v7qZjyQ3Pd7r2u4H"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        ></iframe>
+      <div>
+        <Homeobj />
       </div>
-      <AboutImage />
 
       <Footer />
     </div>
