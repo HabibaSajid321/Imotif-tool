@@ -14,7 +14,7 @@ const Navbar = () => {
     <header className="flex flex-wrap flex-row  justify-center md:items-center md:space-x-4  bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 w-full md:p-6 p-1  ">
       <button
         onClick={toggleLink}
-        className="inline-block md:hidden  text-color-white pl-[280px] "
+        className="inline-block md:hidden  text-color-white pl-[305px]"
       >
         <HiBars3 className="w-10 h-12    " />
       </button>

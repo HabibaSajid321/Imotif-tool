@@ -26,14 +26,14 @@ const Homepage: FC = () => {
             src={Uaflogo}
             alt="logo"
             loading="eager"
-            className="md:w-[100px] w-[70px] md:h-[100px] h-[60px] pt-4"
+            className="md:w-[125px] w-[90px] md:h-[105px] h-[65px] pt-4 pl-12"
           />
 
           <Image
             src={Usdalogo}
             alt="logo"
             loading="eager"
-            className="md:w-[100px] w-[70px] md:h-[100px] h-[60px]"
+            className="md:w-[125px] w-[90px] md:h-[105px] h-[65px] pr-12 "
           />
         </div>
 
@@ -45,7 +45,7 @@ const Homepage: FC = () => {
           <div className="pt-20">
             <button
               className=" flex items-center  bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 w-full text-[#efe8fd] md:text-2xl text-lg 
-                md:px-10 px-6 rounded-lg hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black "
+                md:px-10 px-6 rounded-lg hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 "
               onClick={handleClick}
             >
               Go to Submission portal

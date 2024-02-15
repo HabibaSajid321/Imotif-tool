@@ -39,15 +39,15 @@ const analyze = () => {
             </select>
           </div>
         </div>
-        <div className="px-8 bg-gray-200 p-3 rounded-md border h-32 text-black  border-gray-500 ]">
+        <div className="px-8 bg-gray-200 p-3 rounded-md border h-32 text-black  border-gray-500 ">
           <input
             type="text"
             placeholder="Example CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC"
-            className="font-xl px-44"
+            className="font-xl "
           />
         </div>
         <div>
-          <button className="flex items-center justify-center md:font-semibold font-normal text-gray-100 bg-gradient-to-r from-gray-600 via-green-700 to-cyan-900 md:w-40 w-32 md:px-2 px-1 py-1 rounded-md hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black">
+          <button className="flex items-center justify-center md:font-semibold font-normal text-gray-100 bg-gradient-to-r from-gray-600 via-green-700 to-cyan-900 md:w-40 w-32 md:px-2 px-1 py-1 rounded-md hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 ">
             Submit Query
           </button>
         </div>
