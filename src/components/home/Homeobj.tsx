@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import Data1 from "../../../public/assets/data1.png";
-import Data2 from "../../../public/assets/data2.png";
+import Data1 from "../../../public/assets/home1.jpg";
+import Data2 from "../../../public/assets/home2.jpg";
 
 const Homeobj = () => {
   return (
     <div className="text-black mb-10">
-      <div className="text-black flex flex-col items-center justify-center">
+      <div className="text-black flex flex-col items-center justify-center ">
         <Image
-          src={Data1}
+          src={Data2}
           alt="logo"
           loading="eager"
-          className="md:w-[800px] w-[400px] md:h-[600px] h-[500px]"
+          className="md:w-[900px] w-[400px] md:h-[600px] h-[500px]"
         />
         <p className=" text-justify md:px-44 px-4 md:text-base text-xs ">
           We are working on Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -42,10 +42,10 @@ const Homeobj = () => {
       </div>
       <div className="text-black flex flex-col items-center justify-center">
         <Image
-          src={Data2}
+          src={Data1}
           alt="logo"
           loading="eager"
-          className="md:w-[800px] w-[400px] md:h-[600px] h-[500px]"
+          className="md:w-[1200px] w-[400px] md:h-[600px] h-[500px]"
         />
         <p className=" flex items-center justify-center text-justify md:px-44 px-4 md:text-base text-xs">
           We are working on Lorem ipsum, dolor sit amet consectetur adipisicing

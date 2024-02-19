@@ -1,5 +1,4 @@
 "use client";
-import AboutImage from "@/components/aboutImage/AboutImage";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import React, { FC } from "react";
@@ -17,7 +16,7 @@ const Homepage: FC = () => {
   };
   return (
     <div className="flex flex-col text-white ">
-      <div className=" bg-white md:h-[610px] h-[600px]">
+      <div className=" bg-gray-200 md:h-[610px] h-[600px]">
         <div className="">
           <Navbar />
         </div>
@@ -26,14 +25,14 @@ const Homepage: FC = () => {
             src={Uaflogo}
             alt="logo"
             loading="eager"
-            className="md:w-[125px] w-[90px] md:h-[105px] h-[65px] pt-4 pl-12"
+            className="md:w-[135px] w-[100px] md:h-[105px] h-[75px] pt-4 pl-12"
           />
 
           <Image
             src={Usdalogo}
             alt="logo"
             loading="eager"
-            className="md:w-[125px] w-[90px] md:h-[105px] h-[65px] pr-12 "
+            className="md:w-[135px] w-[100px] md:h-[105px] h-[75px] pr-12 "
           />
         </div>
 
@@ -57,7 +56,7 @@ const Homepage: FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center md:gap-5 ">
+      <div className="flex flex-col items-center justify-center md:gap-5 pt-8 ">
         <h1 className="text-[#1f7f6d]  md:text-3xl text-xl font-medium ">
           ABOUT BIOVIS-HUB
         </h1>
@@ -73,7 +72,7 @@ const Homepage: FC = () => {
           A Web Portal for Bioinformatics Visualization Tools
         </p>
       </div>
-      <div>
+      <div className="pt-12">
         <Homeobj />
       </div>
 
