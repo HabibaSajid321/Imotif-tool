@@ -26,8 +26,8 @@ const about = () => {
           />
         </div>
         <div className="md:w-1/2 w-full md:pt-72 pt-3 flex flex-col justify-center content-center  ">
-          <div className="flex flex-col ">
-            <h1 className="text-[#000000] font-bold md:text-3xl text-xl md:px-[20px] px-4  test-left">
+          <div className="flex flex-col justify-center content-center pl-6 ">
+            <h1 className="text-[#000000] font-bold md:text-3xl text-xl md:px-[20px] px-4  ">
               Vice Chancellor
             </h1>
             <h1 className="text-black text-base md:px-[20px] px-4 font-medium  text-left">
@@ -39,7 +39,7 @@ const about = () => {
             </h1>
           </div>
 
-          <p className="text-[#000000] md:text-lg text-[13px] md:px-[20px] px-4 pt-4 text-justify ">
+          <p className="text-[#000000] md:text-lg text-[13px] md:px-[20px] px-10 pt-4 text-justify pl- ">
             Our Honorable Vice Chancellor, a beacon of wisdom and vision,
             empowers us with invaluable resources to pursue excellence
           </p>
