@@ -39,7 +39,7 @@ md:hover:text-gray-600 hover:text-[#0bd9c588]"
             Analyzer
           </h1>
         </Link>
-        <Link href="/contact">
+        <Link href="/innovation">
           <h1
             className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-gray-100 
 md:hover:text-gray-600 hover:text-[#0bd9c588]"

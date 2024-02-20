@@ -63,14 +63,19 @@ const Analyze = () => {
               </select>
             </div>
           </div>
-          <div className="px-8 bg-gray-200 p-3 rounded-md border h-32 text-black  border-gray-500 ">
-            <input
-              type="text"
-              placeholder="Example CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC TTT CCC"
-              className="font-xl "
-              value={sequence}
-              onChange={(e) => setSequence(e.target.value)}
-            />
+          <div>
+            <h1 className="text-[#b83f3f] font-semibold">
+              free till trail version ends
+            </h1>
+            <div className=" bg-gray-200 p-3 rounded-md border h-32 text-black  border-gray-500 ">
+              <input
+                type="text"
+                placeholder="Example CCC TTT CCC TTT CCC TTT "
+                className="font-xl w-full whitespace-normal h-10 "
+                value={sequence}
+                onChange={(e) => setSequence(e.target.value)}
+              />
+            </div>
           </div>
           <div>
             <form onSubmit={handleSubmit}>
