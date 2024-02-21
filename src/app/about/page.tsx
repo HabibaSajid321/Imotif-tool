@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import VCimage from "../../../public/assets/vc.jpg";
 import Navbar from "@/components/navbar/Navbar";
-import EfsDImage from "../../../public/assets/efs.jpeg";
-import CasDirector from "../../../public/assets/DrSultan.jpg";
+import EfsDImage from "../../../public/assets/efs4.jpg";
+import CasDirector from "../../../public/assets/DrSultan3.jpg";
 import Mamimg from "../../../public/assets/mamAmen.jpg";
 import HSimg from "../../../public/assets/hassanimg.jpg";
 import IMg1 from "../../../public/assets/hassan.jpg";
@@ -21,7 +21,7 @@ const About = () => {
         <div className="flex px-32 w-full pt-16 ">
           <div className="w-1/3">
             <Image
-              className="md:w-[270px] w-[300px] md:h-[270px] h-[300px] rounded-full "
+              className="md:w-[280px] w-[300px] md:h-[270px] h-[300px] rounded-full "
               src={VCimage}
               alt="about"
               loading="eager"
@@ -53,7 +53,7 @@ const About = () => {
         <div className="flex px-32 w-full pt-16 ">
           <div className="w-1/3">
             <Image
-              className="md:w-[290px] w-[300px] md:h-[270px] h-[300px] rounded-full "
+              className="md:w-[280px] w-[300px] md:h-[270px] h-[300px] rounded-full "
               src={EfsDImage}
               alt="about"
               loading="eager"
@@ -86,7 +86,7 @@ const About = () => {
         <div className="flex px-32 w-full pt-16 ">
           <div className="w-1/3">
             <Image
-              className="md:w-[290px] w-[300px] md:h-[270px] h-[300px] rounded-full "
+              className="md:w-[280px] w-[300px] md:h-[270px] h-[300px] rounded-full "
               src={CasDirector}
               alt="about"
               loading="eager"
@@ -123,7 +123,7 @@ const About = () => {
         <div className="flex px-32 w-full pt-8 ">
           <div className="w-1/3">
             <Image
-              className="md:w-[270px] w-[300px] md:h-[270px] h-[300px] rounded-full "
+              className="md:w-[280px] w-[300px] md:h-[270px] h-[300px] rounded-full "
               src={Mamimg}
               alt="about"
               loading="eager"
@@ -149,7 +149,7 @@ const About = () => {
         <div className="flex px-32 w-full pt-16 ">
           <div className="w-1/3">
             <Image
-              className="md:w-[290px] w-[300px] md:h-[295px] h-[290px] rounded-full "
+              className="md:w-[280px] w-[300px] md:h-[295px] h-[290px] rounded-full "
               src={img2}
               alt="about"
               loading="eager"
