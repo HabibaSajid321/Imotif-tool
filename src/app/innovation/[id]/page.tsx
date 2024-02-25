@@ -1,9 +1,10 @@
 "use client";
-import { useParams } from "next/navigation";
+import { useRouter } from "next/router";
 import React from "react";
 
-const page = () => {
-  const { id } = useParams();
+const Page = () => {
+  const router = useRouter();
+  const { id } = router.query;
   const newId = Number(id);
 
   console.log(id);
@@ -15,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

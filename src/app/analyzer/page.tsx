@@ -1,8 +1,7 @@
 "use client";
 import Navbar from "@/components/navbar/Navbar";
 import React, { useState } from "react";
-// import Navbar from "@/components/navbar/Navbar";
-
+import Image from "next/image";
 // Define the sequence images
 const sequences = [
   { sequence: "CCC TTT CCC TTT CCC", image: "/assets/data1.png" },
@@ -92,7 +91,7 @@ const Analyze = () => {
           </div>
           {displayedImage && (
             <div className="mt-8 px-10 ">
-              <img
+              <Image
                 src={displayedImage}
                 alt="Displayed"
                 className="md:w-[500px] w-[220px] md:h-[500px] h-[300px]"
