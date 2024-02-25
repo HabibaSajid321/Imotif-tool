@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="flex flex-wrap flex-row  justify-center md:items-center md:space-x-4  bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 w-full md:p-6 p-1  ">
+    <header className="flex flex-wrap flex-row  justify-center md:items-center md:space-x-4  bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 w-full md:p-4 p-1  ">
       <button
         onClick={toggleLink}
         className="inline-block md:hidden  text-color-white pl-[305px]"
@@ -25,38 +25,38 @@ const Navbar = () => {
       >
         <Link href="/">
           <h1
-            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-gray-100 
-md:hover:text-gray-600 hover:text-[#15634288]"
+            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788]
+md:hover:text-gray-600 hover:text-[#15634288] rounded-md"
           >
             Home
           </h1>
         </Link>
         <Link href="/analyzer">
           <h1
-            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-gray-100 
-md:hover:text-gray-600 hover:text-[#0bd9c588]"
+            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788]
+md:hover:text-gray-600 hover:text-[#a4a9a888] rounded-md"
           >
             Analyzer
           </h1>
         </Link>
         <Link href="/innovation">
           <h1
-            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-gray-100 
-md:hover:text-gray-600 hover:text-[#0bd9c588]"
+            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788] 
+md:hover:text-gray-600 hover:text-[#0bd9c588] rounded-md"
           >
             Innovation
           </h1>
         </Link>
         <Link href="/about">
           <h1
-            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-gray-100 
-md:hover:text-gray-600 hover:text-[#0bd9c588]"
+            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788]
+md:hover:text-gray-600 hover:text-[#0bd9c588] rounded-md"
           >
             About
           </h1>
         </Link>
         <Link href="/contact">
-          <h1 className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-gray-100 md:hover:text-gray-600 hover:text-[#0bd9c588]">
+          <h1 className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788] md:hover:text-gray-600 hover:text-[#0bd9c588] rounded-md">
             Contact
           </h1>
         </Link>

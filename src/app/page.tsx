@@ -32,19 +32,19 @@ const Homepage: FC = () => {
             src={Usdalogo}
             alt="logo"
             loading="eager"
-            className="md:w-[135px] w-[100px] md:h-[105px] h-[75px] pr-12 "
+            className="md:w-[135px] w-[110px] md:h-[105px] h-[75px] pr-10 "
           />
         </div>
 
-        <div className="flex flex-col items-center text-center justify-center pt-40">
+        <div className="flex flex-col items-center text-center justify-center pt-28">
           <p className="text-black md:text-4xl text-[20px] md:px-12 px-6  font-semibold leading-relaxed ">
             MD-TSPM: Thermal Stability Prediction Method for I-motif
           </p>
 
-          <div className="pt-20">
+          <div className="pt-12">
             <button
               className=" flex items-center  bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 w-full text-[#efe8fd] md:text-2xl text-lg 
-                md:px-10 px-6 rounded-lg hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 "
+                md:px-10 px-6 md:py-1 rounded-full hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 "
               onClick={handleClick}
             >
               Go to Submission portal
@@ -69,7 +69,7 @@ const Homepage: FC = () => {
         </div>
 
         <p className="text-[#404040]  md:text-2xl text-[15px] md:font-medium  text-center">
-          A Web Portal for Bioinformatics Visualization Tools
+          A Web Portal for identification of thermal non-canonical
         </p>
       </div>
       <div className="pt-12">
