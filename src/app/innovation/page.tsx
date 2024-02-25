@@ -19,12 +19,12 @@ const Innovation: FC = () => {
         Innovation
       </div>
       <div className="flex justify-center content-center  items-center ">
-        <div className="flex items-center justify-start gap-5 flex-wrap py-10 md:px-28 px-10  ">
+        <div className="flex items-center justify-start gap-5 flex-wrap md:py-10 py-14 md:px-28 px-10  ">
           {blogs.map((val: any, i: number) => (
             <div
               key={i}
               onClick={() => router.push(`/innovation/${val.id}`)}
-              className="md:w-[310px] h-64  cursor-pointer border-gray-400 hover:border-[#175d4a] border-[1px] hover:border-[2px] rounded-[4px] flex flex-col transition-all duration-300"
+              className="md:w-[310px] md:h-64 h-72  cursor-pointer border-gray-400 hover:border-[#175d4a] border-[1px] hover:border-[2px] rounded-[4px] flex flex-col transition-all duration-300"
               // Set max-width to 33.33% minus gap
             >
               <div className=" flex justify-center items-center p-5">
@@ -37,7 +37,7 @@ const Innovation: FC = () => {
                 />
               </div>
               <div className="px-6">
-                <div className="bg-gray-200 h-20 w-full rounded-lg">
+                <div className="bg-gray-200 md:h-20 h-16 w-full rounded-lg">
                   <p className="capitalize text-black text-sm text-center font-semibold px-2">
                     {val.title}
                   </p>
