@@ -1,18 +1,42 @@
 "use client";
-import { useRouter } from "next/router";
-import React from "react";
+import Navbar from "@/components/navbar/Navbar";
+import { ChartData } from "@/utils/chartData";
+import { useParams, useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Page = () => {
+  const [data, setData] = useState<any>(null);
   const router = useRouter();
-  const { id } = router.query;
+  const { id } = useParams();
   const newId = Number(id);
 
-  console.log(id);
+  useEffect(() => {
+    console.log("Current ID:", newId);
+    const findData: any = ChartData.find((data) => data.id === newId);
+    console.log("Found Data:", findData);
+    setData(findData);
+  }, [id]);
+
   return (
-    <div className="text-black">
-      Lorem ipsum dolor sit.
-      {newId}
-    </div>
+    <>
+      <Navbar />
+      {data && (
+        <div className="text-center pt-10">
+          <p className="text-black font-bold text-2xl">{data.title}</p>
+          {data.ChartImage && (
+            <div className="mt-4 flex justify-center content-center">
+              <Image
+                src={data.ChartImage}
+                alt="Chart Image"
+                width={1200}
+                height={800}
+              />
+            </div>
+          )}
+        </div>
+      )}
+    </>
   );
 };
 

@@ -18,14 +18,16 @@ const Innovation: FC = () => {
       <div className="flex justify-center content-center text-[#030303] font-semibold text-5xl h-36 text-center pt-9 bg-gray-200">
         Innovation
       </div>
+      <div className="text-gray-600 text-center pt-8 text-2xl font-bold ">
+        <h1>Temperature dependent RMSD plots of IMOTIF Structures </h1>
+      </div>
       <div className="flex justify-center content-center  items-center ">
-        <div className="flex items-center justify-start gap-5 flex-wrap md:py-10 py-14 md:px-28 px-10  ">
+        <div className="flex items-center justify-center gap-5 flex-wrap md:py-10 py-14 md:px-28 px-10 content-center ">
           {blogs.map((val: any, i: number) => (
             <div
               key={i}
               onClick={() => router.push(`/innovation/${val.id}`)}
-              className="md:w-[310px] md:h-64 h-72  cursor-pointer border-gray-400 hover:border-[#175d4a] border-[1px] hover:border-[2px] rounded-[4px] flex flex-col transition-all duration-300"
-              // Set max-width to 33.33% minus gap
+              className="md:w-[310px] md:h-64 h-72  cursor-pointer border-gray-400 hover:border-[#175d4a] border-[1px] hover:border-[2px] rounded-[4px] flex flex-col transition-all duration-300 "
             >
               <div className=" flex justify-center items-center p-5">
                 <Image
@@ -38,7 +40,7 @@ const Innovation: FC = () => {
               </div>
               <div className="px-6">
                 <div className="bg-gray-200 md:h-20 h-16 w-full rounded-lg">
-                  <p className="capitalize text-black text-sm text-center font-semibold px-2">
+                  <p className="capitalize text-black md:text-lg text-center font-semibold px-2">
                     {val.title}
                   </p>
                 </div>
