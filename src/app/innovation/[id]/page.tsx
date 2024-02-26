@@ -23,7 +23,9 @@ const Page = () => {
       <Navbar />
       {data && (
         <div className="text-center pt-10">
-          <p className="text-black font-bold text-2xl">{data.title}</p>
+          <p className="text-black font-bold md:text-2xl text-lg">
+            {data.title}
+          </p>
           {data.ChartImage && (
             <div className="mt-4 flex justify-center content-center">
               <Image

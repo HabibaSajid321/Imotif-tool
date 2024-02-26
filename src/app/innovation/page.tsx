@@ -13,12 +13,12 @@ const Innovation: FC = () => {
   const [blogs, setBlogs] = useState<any>(ChartData);
 
   return (
-    <div className="text-black">
+    <div className="">
       <Navbar />
-      <div className="flex justify-center content-center text-[#030303] font-semibold text-5xl h-36 text-center pt-9 bg-gray-200">
+      <div className="flex justify-center content-center text-[#030303] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-9 bg-gray-200">
         Innovation
       </div>
-      <div className="text-gray-600 text-center pt-8 text-2xl font-bold ">
+      <div className="text-gray-600 text-center pt-8 md:text-2xl text-lg md:font-bold font-semibold ">
         <h1>Temperature dependent RMSD plots of IMOTIF Structures </h1>
       </div>
       <div className="flex justify-center content-center  items-center ">
@@ -27,7 +27,7 @@ const Innovation: FC = () => {
             <div
               key={i}
               onClick={() => router.push(`/innovation/${val.id}`)}
-              className="md:w-[310px] md:h-64 h-72  cursor-pointer border-gray-400 hover:border-[#175d4a] border-[1px] hover:border-[2px] rounded-[4px] flex flex-col transition-all duration-300 "
+              className="md:w-[310px] md:h-64 h-64  cursor-pointer border-gray-400 hover:border-[#175d4a] border-[1px] hover:border-[2px] rounded-[4px] flex flex-col transition-all duration-300 "
             >
               <div className=" flex justify-center items-center p-5">
                 <Image
