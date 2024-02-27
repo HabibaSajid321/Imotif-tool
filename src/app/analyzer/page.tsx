@@ -2,11 +2,38 @@
 import Navbar from "@/components/navbar/Navbar";
 import React, { useState } from "react";
 import Image from "next/image";
-// Define the sequence images
+import Footer from "@/components/footer/Footer";
 const sequences = [
-  { sequence: "CCC TTT CCC TTT CCC", image: "/assets/data1.png" },
-  { sequence: "CCC TTT TTT CCC", image: "/assets/data2.png" },
-  // Add more objects as needed
+  { sequence: "CCCCTCCCCTCCCCTCCCC", image: "/assets/azCharts/C4T1.png" },
+  { sequence: "CCCCTTCCCCTTCCCCTTCCCC", image: "/assets/azCharts/C4T2.png" },
+  {
+    sequence: "CCCCTTTTCCCCTTTTCCCCTTTTCCCC",
+    image: "/assets/azCharts/C4T4.png",
+  },
+  {
+    sequence: "CCCCTTTTTCCCCTTTTTCCCCTTTTTCCCC",
+    image: "/assets/azCharts/C4T5.png",
+  },
+  {
+    sequence: "CCCCTTTTTTCCCCTTTTTTCCCCTTTTTTCCCC",
+    image: "/assets/azCharts/C4T6.png",
+  },
+  {
+    sequence: "CCCCTTTTTTTCCCCTTTTTTTCCCCTTTTTTTCCCC  ",
+    image: "/assets/azCharts/C4T7.png",
+  },
+  {
+    sequence: "CCCCTTTTTTTTCCCCTTTTTTTTCCCCTTTTTTTTCCCC  ",
+    image: "/assets/azCharts/C4T8.png",
+  },
+  {
+    sequence: "CCCCTTTTTTTTTCCCCTTTTTTTTTCCCCTTTTTTTTTCCCC  ",
+    image: "/assets/azCharts/C4T9.png",
+  },
+  {
+    sequence: "CCCCTTTTTTTTTTCCCCTTTTTTTTTTCCCCTTTTTTTTTTCCCC",
+    image: "/assets/azCharts/C4T10.png",
+  },
 ];
 
 const Analyze = () => {
@@ -90,16 +117,19 @@ const Analyze = () => {
             </form>
           </div>
           {displayedImage && (
-            <div className="mt-8 px-10 ">
+            <div className="md:pt-6 pt-2 px-10 flex justify-center content-center">
               <Image
+                width={900}
+                height={800}
                 src={displayedImage}
                 alt="Displayed"
-                className="md:w-[500px] w-[220px] md:h-[500px] h-[300px]"
+                // className="md:w-[600px] w-[220px] md:h-[500px] h-[300px]"
               />
             </div>
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
