@@ -82,10 +82,10 @@ const Analyze = () => {
               <label>Temp:</label>
               <select name="C-Range" id="c-range">
                 <option value="temp280k">280k</option>
-                <option value="temp300k">300kl</option>
-                <option value="temp300k">320kl</option>
-                <option value="temp300k">340kl</option>
-                <option value="temp300k">360kl</option>
+                <option value="temp300k">300k</option>
+                <option value="temp300k">320k</option>
+                <option value="temp300k">340k</option>
+                <option value="temp300k">360k</option>
               </select>
             </div>
           </div>
