@@ -30,7 +30,7 @@ const ContactForm = () => {
         <div className="flex items-center justify-center"></div>
         <form
           onSubmit={handleSubmit}
-          className="max-w-lg mx-auto md:mt-8 mt-6 md:pt-10 pt-5 md:px-0 px-2  "
+          className="max-w-lg mx-auto  md:px-0 px-4  "
           action="https://formspree.io/f/mvoekavb"
           method="POST"
         >

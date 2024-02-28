@@ -57,19 +57,16 @@ const Homepage: FC = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center md:gap-5 pt-8 ">
-        <h1 className="text-[#1f7f6d]  md:text-3xl text-xl font-medium ">
-          ABOUT BIOVIS-HUB
-        </h1>
-
         <div>
           <h1 className="text-[#404040]  md:text-5xl text-xl text-center font-bold ">
-            Biomanufacturing
+            Data Analytics
             <span className="inline text-[#1B7341]"> is our future</span>
           </h1>
         </div>
 
         <p className="text-[#404040]  md:text-2xl text-[15px] md:font-medium  text-center">
-          A Web Portal for identification of thermal non-canonical
+          A Web Portal For Identification Of Thermal Stability Of Non-Canonical
+          Structures
         </p>
       </div>
       <div className="pt-12">

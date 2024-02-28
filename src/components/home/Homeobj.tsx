@@ -12,55 +12,31 @@ const Homeobj = () => {
           src={Data2}
           alt="logo"
           loading="eager"
-          className="md:w-[900px] w-[400px] md:h-[600px] h-[500px]"
+          width={900}
+          height={600}
+          // className="md:w-[900px] w-[400px] md:h-[600px] h-[500px]"
         />
-        <p className=" text-justify md:px-44 px-4 md:text-base text-xs ">
-          We are working on Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Quasi eaque aspernatur atque, odit, numquam cupiditate, repellat
-          hic adipisci quod iusto magnam recusandae ea corrupti amet molestias
-          dolorum exercitationem quae. Alias. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Tempore delectus, reiciendis veniam sunt
-          repellat perferendis optio accusamus sequi? Deleniti unde, voluptatum
-          id quae ducimus pariatur neque incidunt molestias explicabo nam. Lorem
-          ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt debitis
-          autem tempora nisi, veritatis eos in harum, facere iste quisquam
-          illum. Ipsam odit sapiente eius repellendus accusantium, animi a
-          minima?
+        <p className=" text-justify md:px-44 px-4 md:text-base text-xs pt-10">
+          Introducing MD-TSPM: A Computational Platform Utilizing Molecular
+          Dynamics Simulation for Prediction Thermal Stability of Noncanonical
+          Structures. Revolutionizing the Discovery of Therapeutics and
+          Materials, Enabling Future Innovations Today.
         </p>
       </div>
       <div className="flex flex-col ">
-        <h1 className="md:text-xl text-sm font-bold text-left md:px-44 px-4 ">
-          Objective:
-        </h1>
-        <p className=" flex items-center justify-center text-justify md:px-44 px-4 md:text-base text-xs ">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
-          harum sequi enim dolorum maxime recusandae quasi. A optio neque
-          consequatur sunt, non id nobis autem cumque totam, necessitatibus
-          eaque ducimus! Est, quae! Ipsa, reprehenderit provident magni fugiat,
-          deleniti inventore, totam voluptatibus accusamus laboriosam libero
-          eveniet ratione odit hic et natus sunt cupiditate? Rerum, nisi?
-        </p>
+        <h1 className="md:text-xl text-sm font-bold text-left md:px-44 px-4 "></h1>
+        <p className=" flex items-center justify-center text-justify md:px-44 px-4 md:text-base text-xs "></p>
       </div>
       <div className="text-black flex flex-col items-center justify-center ">
         <Image
           src={Data1}
           alt="logo"
           loading="eager"
-          className="md:w-[900px] w-[400px] md:h-[600px] h-[500px] py-10"
+          width={900}
+          height={600}
+          // className="md:w-[900px] w-[400px] md:h-[600px] h-[500px] py-10"
         />
-        <p className=" flex items-center justify-center text-justify md:px-44 px-4 md:text-base text-xs">
-          We are working on Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Quasi eaque aspernatur atque, odit, numquam cupiditate, repellat
-          hic adipisci quod iusto magnam recusandae ea corrupti amet molestias
-          dolorum exercitationem quae. Alias. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Tempore delectus, reiciendis veniam sunt
-          repellat perferendis optio accusamus sequi? Deleniti unde, voluptatum
-          id quae ducimus pariatur neque incidunt molestias explicabo nam. Lorem
-          ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt debitis
-          autem tempora nisi, veritatis eos in harum, facere iste quisquam
-          illum. Ipsam odit sapiente eius repellendus accusantium, animi a
-          minima?
-        </p>
+        <p className=" flex items-center justify-center text-justify md:px-44 px-4 md:text-base text-xs"></p>
       </div>
     </div>
   );

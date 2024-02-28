@@ -25,7 +25,7 @@ const Navbar = () => {
       >
         <Link href="/">
           <h1
-            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788]
+            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#a4c3c188]
 md:hover:text-gray-600 hover:text-[#15634288] rounded-md"
           >
             Home
@@ -33,7 +33,7 @@ md:hover:text-gray-600 hover:text-[#15634288] rounded-md"
         </Link>
         <Link href="/analyzer">
           <h1
-            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788]
+            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#a4c3c188]
 md:hover:text-gray-600 hover:text-[#a4a9a888] rounded-md"
           >
             Analyzer
@@ -41,7 +41,7 @@ md:hover:text-gray-600 hover:text-[#a4a9a888] rounded-md"
         </Link>
         <Link href="/innovation">
           <h1
-            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788] 
+            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#a4c3c188] 
 md:hover:text-gray-600 hover:text-[#0bd9c588] rounded-md"
           >
             Innovation
@@ -49,14 +49,14 @@ md:hover:text-gray-600 hover:text-[#0bd9c588] rounded-md"
         </Link>
         <Link href="/about">
           <h1
-            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788]
-md:hover:text-gray-600 hover:text-[#0bd9c588] rounded-md"
+            className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#a4c3c188]
+md:hover:text-gray-600 hover:text-[#015c5488] rounded-md"
           >
             About
           </h1>
         </Link>
         <Link href="/contact">
-          <h1 className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#99fee788] md:hover:text-gray-600 hover:text-[#0bd9c588] rounded-md">
+          <h1 className="block py-1 px-2  md:text-[20px] md:text-white text-gray-600 hover:bg-[#a4c3c188] md:hover:text-gray-600 hover:text-[#0bd9c588] rounded-md">
             Contact
           </h1>
         </Link>
