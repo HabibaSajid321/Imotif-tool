@@ -34,6 +34,7 @@ const sequences = [
     sequence: "CCCCTTTTTTTTTTCCCCTTTTTTTTTTCCCCTTTTTTTTTTCCCC",
     image: "/assets/azCharts/C4T10.png",
   },
+  { sequence: "CCCCTTTCCCCTTTCCCCTTTCCCC", image: "/assets/azCharts/C4T3.png" },
 ];
 
 const Analyze = () => {
@@ -55,6 +56,9 @@ const Analyze = () => {
   return (
     <div>
       <Navbar />
+      <div className="flex justify-center content-center text-[#030303] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-9 bg-gray-200">
+        Sequence Analyzer
+      </div>
       <div className="bg-white pt-8">
         <div className="flex flex-col md:m-9 m-5 gap-8">
           <div className="flex w-full justify-between text-black md:px-8 px-2 bg-gray-200 p-3 rounded-md border border-gray-500">
@@ -117,7 +121,7 @@ const Analyze = () => {
             </form>
           </div>
           {displayedImage && (
-            <div className="md:pt-6 pt-2 px-10 flex justify-center content-center">
+            <div className="md:pt-6 pt-2 px-10 flex justify-center content-center flex-wrap ">
               <Image
                 width={900}
                 height={800}
@@ -128,8 +132,10 @@ const Analyze = () => {
             </div>
           )}
         </div>
+        <div className="">
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </div>
   );
 };
