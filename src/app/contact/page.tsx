@@ -2,6 +2,7 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("mvoekavb");
@@ -21,10 +22,12 @@ const ContactForm = () => {
       <div>
         <Navbar />
       </div>
-      <div className="mt-10">
-        <div className="flex items-center justify-center">
-          <h1 className="text-black font-bold text-2xl"> Contact Us</h1>
-        </div>
+      <h1 className="flex justify-center content-center text-[#030303] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-12 bg-gray-200 ">
+        {" "}
+        Contact us
+      </h1>
+      <div className="pt-10">
+        <div className="flex items-center justify-center"></div>
         <form
           onSubmit={handleSubmit}
           className="max-w-lg mx-auto md:mt-8 mt-6 md:pt-10 pt-5 md:px-0 px-2  "
@@ -89,12 +92,16 @@ focus:outline-none focus:shadow-outline"
           <button
             type="submit"
             disabled={state.submitting}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="flex items-center justify-center md:font-semibold font-normal text-gray-100 
+            bg-gradient-to-r from-gray-600 via-green-700 to-cyan-900 md:w-40 w-32 md:px-2 px-1 py-1 
+            rounded-md hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black 
+           transition-all duration-300 mb-12"
           >
             {state.submitting ? "Submitting..." : "Submit"}
           </button>
         </form>
       </div>
+      <Footer />
     </div>
   );
 };
