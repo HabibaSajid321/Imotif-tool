@@ -72,8 +72,9 @@ const Homeobj = () => {
             The tool focuses on analyzing I-motif DNA structures, vital for gene
             regulation and genomic stability. It aims to explore how loop length
             variations affect their thermal stability. This research is crucial
-            for advancing our understanding of DNA's non-canonical structures,
-            with potential implications in biological research and therapeutics.
+            for advancing our understanding of the non-canonical structures of
+            DNA, with potential implications in biological research and
+            therapeutics.
           </p>
         </div>
       </div>

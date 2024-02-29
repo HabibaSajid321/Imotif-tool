@@ -16,7 +16,7 @@ const Page = () => {
     const findData: any = ChartData.find((data) => data.id === newId);
     console.log("Found Data:", findData);
     setData(findData);
-  }, [id]);
+  }, [id, newId]);
 
   return (
     <>
