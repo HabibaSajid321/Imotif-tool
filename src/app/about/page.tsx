@@ -38,7 +38,7 @@ const About = () => {
                 Prof. Dr. Rana Iqrar Ahmed Khan
               </h1>
               <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left ">
-                (Hilal-i-Imtiaz, Sitara-i-Imtiaz)
+                Hilal-i-Imtiaz, Sitara-i-Imtiaz
               </h3>
               <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block ">
                 Under the leadership of the Vice Chancellor, the University of
@@ -82,7 +82,7 @@ const About = () => {
                 Prof. Dr. Ijaz Ahmad Bhatti
               </h1>
               <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left">
-                (Executive Director)
+                Executive Director
               </h3>
               <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block ">
                 The Director of the Endowment Fund Secretariat and Dean Faculty
@@ -216,15 +216,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div>
-          {" "}
-          {/* <p className="text-black pt-4  w-full text-sm px-12 md:hidden block "> */}
-          {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi */}
-          {/* ducimus sed ab eaque reprehenderit consequuntur, ex animi voluptatem */}
-          {/* quas quae velit illum placeat ipsa similique tempore. Eaque */}
-          {/* consequuntur tenetur earum tempore maxime! */}
-          {/* </p> */}
-        </div>
+        <div></div>
         <div className="pt-8">
           <Footer />
         </div>
