@@ -13,9 +13,17 @@ const About = () => {
     <div>
       <div className="flex flex-col  ">
         <Navbar />
-        <h1 className="text-gray-600 md:px-32 px-10 md:pt-10 pt-4 flex justify-center content-center font-bold md:text-2xl text-lg ">
-          Meet Our Officials: Building Strong Collaborations for Success
-        </h1>
+
+        <div className="pt-10 px-3">
+          <h1 className="text-[#404040]  md:text-4xl text-xl text-center font-bold  ">
+            Meet Our Officials:
+            <span className="inline text-[#1B7341] ">
+              {" "}
+              Building Strong Collaborations for Success
+            </span>
+          </h1>
+        </div>
+
         <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10 ">
           <div className="w-1/3">
             <Image
@@ -88,8 +96,8 @@ const About = () => {
                 The Director of the Endowment Fund Secretariat and Dean Faculty
                 of Sciences at the University of Agriculture, Faisalabad UAF
                 plays a pivotal role in ensuring the effective utilization of
-                resources towards advancing Pakistan's long-term research and
-                development goals in the agriculture and health sector.
+                resources towards advancing {"Pakistan's"} long-term research
+                and development goals in the agriculture and health sector.
               </p>
             </div>
           </div>
@@ -99,7 +107,7 @@ const About = () => {
             The Director of the Endowment Fund Secretariat and Dean Faculty of
             Sciences at the University of Agriculture, Faisalabad UAF plays a
             pivotal role in ensuring the effective utilization of resources
-            towards advancing Pakistan's long-term research and development
+            towards advancing {"Pakistan's"} long-term research and development
             goals in the agriculture and health sector.
           </p>
         </div>
