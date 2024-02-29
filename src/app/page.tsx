@@ -3,8 +3,6 @@ import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import React, { FC } from "react";
 import Image from "next/image";
-// import Usdalogo from "../../public/assets/usda.png";
-// import Uaflogo from "../../public/assets/uaf1.png";
 import { FaArrowRight } from "react-icons/fa";
 import Homeobj from "@/components/home/Homeobj";
 import Link from "next/navigation";
