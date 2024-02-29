@@ -11,7 +11,7 @@ import Footer from "@/components/footer/Footer";
 const About = () => {
   return (
     <div>
-      <div className="flex flex-col  ">
+      <div className="flex flex-col ">
         <Navbar />
 
         <div className="pt-10 px-3">
@@ -24,7 +24,7 @@ const About = () => {
           </h1>
         </div>
 
-        <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10 ">
+        <div className="flex md:px-32 px-10 md:pt-24 pt-10 lg:w-[1180px] w-full ">
           <div className="w-1/3">
             <Image
               className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
@@ -71,7 +71,7 @@ const About = () => {
             leveraging high-performance systems for advanced analysis.
           </p>
         </div>
-        <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10  ">
+        <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10 lg:w-[1180px]  ">
           <div className="w-1/3">
             <Image
               className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl"
@@ -111,7 +111,7 @@ const About = () => {
             goals in the agriculture and health sector.
           </p>
         </div>
-        <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10 ">
+        <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10 lg:w-[1180px]  ">
           <div className="w-1/3">
             <Image
               className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl"
@@ -164,7 +164,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10 ">
+        <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10 lg:w-[1180px] ">
           <div className="w-1/3">
             <Image
               className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
@@ -203,7 +203,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10 ">
+        <div className="flex md:px-32 px-10 w-full md:pt-24 pt-10 lg:w-[1180px] ">
           <div className="w-1/3">
             <Image
               className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
@@ -220,7 +220,17 @@ const About = () => {
               <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left ">
                 Researcher
               </h3>
-              <p className="text-black pt-4 md:text-base text-xs md:pl-5 hidden md:block   "></p>
+              <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block   ">
+                Mr. Muhammad Hassan Butt, a distinguished fellow researcher
+                within this project, possesses expertise in the fields of
+                structural bioinformatics and bioinformatics data analysis. His
+                research endeavors focus on intricate areas such as Docking,
+                Molecular Dynamics (MD) simulation, and subsequent post-MD data
+                analysis. Furthermore, he actively engages in training machine
+                learning models utilizing MD data to address pivotal
+                health-related challenges, both within the human domain and in
+                agricultural contexts.
+              </p>
             </div>
           </div>
         </div>
