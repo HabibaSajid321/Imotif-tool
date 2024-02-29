@@ -18,8 +18,8 @@ const Homeobj = () => {
           Structures
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center w-full">
-        <div className=" flex flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full ">
+      <div className="flex flex-col justify-center items-center w-full ">
+        <div className=" flex flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full p-6 ">
           <div className="w-1/2">
             <Image
               src={homeimg1}

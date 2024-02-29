@@ -38,9 +38,12 @@ const About = () => {
               <div className="flex flex-col justify-center content-center   ">
                 <h1 className="text-[#1f7f6d] md:font-semibold font-medium md:text-xl text-sm md:px-[20px] px-4 text-left ">
                   Prof. Dr. Rana Iqrar Ahmed Khan
+                  <span className="inline text-[#6e706f] pl-2  text-base">
+                    (H.I-S.I)
+                  </span>
                 </h1>
                 <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left ">
-                  (Hilal-i-Imtiaz, Sitara-i-Imtiaz)
+                  Vice Chancellor
                 </h3>
                 <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block  text-justify">
                   Under the leadership of the Vice Chancellor, the University of
@@ -76,19 +79,15 @@ const About = () => {
                 loading="eager"
               />
             </div>
-            <div className="w-2/3 md:pt-5 pt-2">
+            <div className="w-2/3 md:pt-8 pt-6">
               <div className="flex flex-col justify-center content-center   ">
-                <h1 className="text-[#000000] font-bold md:text-3xl text-base md:px-[20px] px-4   ">
-                  Director Endowment Fund Secretariat
-                </h1>
-
                 <h1 className="text-[#1f7f6d] md:font-semibold font-medium md:text-xl text-sm md:px-[20px] px-4 text-left  ">
                   Prof. Dr. Ijaz Ahmad Bhatti
                 </h1>
                 <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left">
                   Executive Director
                 </h3>
-                <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block ">
+                <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block text-justify ">
                   The Director of the Endowment Fund Secretariat and Dean
                   Faculty of Sciences at the University of Agriculture,
                   Faisalabad UAF plays a pivotal role in ensuring the effective
@@ -117,18 +116,15 @@ const About = () => {
                 loading="eager"
               />
             </div>
-            <div className="w-2/3 md:pt-5 pt-2">
+            <div className="w-2/3 md:pt-8 pt-6">
               <div className="flex flex-col justify-center content-center   ">
-                <h1 className=" text-[#000000] font-bold md:text-3xl text-base md:px-[20px] px-4 ">
-                  Director Center of Advance Studies in Agriculture and Food
-                  Security
-                </h1>
-
                 <h1 className="text-[#1f7f6d] md:font-semibold font-medium md:text-xl text-sm md:px-[20px] px-4 text-left  ">
                   Prof. Dr. Sultan Habibullah Khan
                 </h1>
-
-                <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block  ">
+                <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left">
+                  Director CAS-AFS
+                </h3>
+                <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block text-justify  ">
                   The Director CAS-AFS at the University of Agriculture,
                   Faisalabad UAF is a visionary leader dedicated to driving
                   excellence in agricultural education, research, and outreach.
@@ -162,7 +158,7 @@ const About = () => {
           </div>
 
           <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full">
-            <div className="w-1/3">
+            <div className="w-1/3 pt-8">
               <Image
                 className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
                 src={Mamimg}
@@ -178,13 +174,18 @@ const About = () => {
                 <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left ">
                   Assistant Professor
                 </h3>
-                <p className="text-black pt-4 md:text-base text-xs md:pl-5 hidden md:block   ">
+                <p className="text-black pt-4 md:text-base text-xs md:pl-5 hidden md:block  text-justify ">
                   Dr. Amen Shamim, Principal Investigator of this project,
                   specialized as a bioinformatician with a profound interest in
                   data analysis. Her research centers on leveraging
                   computational tools and big data analysis to tackle intricate
                   health issues at the convergence of human, animal, and
-                  environmental health.
+                  environmental health.This project is made possible through the
+                  support of the Endowment Funds Secretariat and in
+                  collaboration with Prof. Kyeong Kyu {"Kim’s"} Lab. As part of
+                  this initiative, a commercialization facility has been
+                  established to support researchers for investigating the
+                  thermal stability of non-canonical structures.
                 </p>
               </div>
             </div>
@@ -218,7 +219,7 @@ const About = () => {
                 <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left ">
                   Researcher
                 </h3>
-                <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block   ">
+                <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block text-justify  ">
                   Mr. Muhammad Hassan Butt, a distinguished fellow researcher
                   within this project, possesses expertise in the fields of
                   structural bioinformatics and bioinformatics data analysis.
@@ -232,6 +233,16 @@ const About = () => {
               </div>
             </div>
           </div>
+          {/* <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full"> */}
+          {/* <div className="w-1/2"> */}
+          {/* <Image */}
+          {/* // className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl " */}
+          {/* // src={HSimg} */}
+          {/* // alt="about" */}
+          {/* // loading="eager" */}
+          {/* // /> */}
+          {/* </div> */}
+          {/* </div> */}
         </div>
         <div></div>
         <div className="pt-8">
