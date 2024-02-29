@@ -27,7 +27,7 @@ const Innovation: FC = () => {
             <div
               key={i}
               onClick={() => router.push(`/innovation/${val.id}`)}
-              className="md:w-[310px] md:h-64 h-64  cursor-pointer border-gray-400 hover:border-[#175d4a] border-[1px] hover:border-[2px] rounded-[4px] flex flex-col transition-all duration-300 "
+              className="md:w-[310px] md:h-64 h-64  cursor-pointer  shadow-lg border border-gray-300 hover:border-[2px] rounded-[4px] flex flex-col transition-all duration-300 "
             >
               <div className=" flex justify-center items-center p-5">
                 <Image

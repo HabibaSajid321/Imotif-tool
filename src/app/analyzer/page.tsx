@@ -112,9 +112,9 @@ const Analyze = () => {
               <button
                 type="submit"
                 className="flex items-center justify-center md:font-semibold font-normal text-gray-100 
-    bg-gradient-to-r from-gray-600 via-green-700 to-cyan-900 md:w-40 w-32 md:px-2 px-1 py-1 
-    rounded-md hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black 
-    transition-all duration-300"
+                   bg-gradient-to-r from-gray-500 via-green-700 to-cyan-600 md:w-40 w-32 md:px-2 px-1 py-1 
+                   rounded-md hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black 
+                  transition-all duration-300"
               >
                 Submit Query
               </button>

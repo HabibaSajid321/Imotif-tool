@@ -12,31 +12,29 @@ const Footer: FC = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-gray-700 via-green-700 to-cyan-900 min-h-[100px] flex  justify-center items-center py-10 border-t-[3px] border-t-[#363636] px-28">
+      <div className="bg-gray-700 flex  justify-center items-center py-10 border-t-[3px] border-t-[#363636] px-28">
         <div className="w-full md:w-[1170px] flex  gap-6 lg:gap-0 lg:flex-row lg:justify-between items-center lg:px-0 px-5 ">
           <div className="w-full lg:w-1/2  ">
             <h1 className="font-bold uppercase text-white pb-4 md:pb-7 text-xl">
-              about us
+              About us
             </h1>
             <ul className="flex flex-col gap-4 ">
               <li>
-                <p className="text-[#f9feff] text-sm text-left font-semibold">
-                  Lorem, ipsum dolor.
-                </p>
+                <p className="text-[#f9feff] text-sm text-left font-semibold"></p>
               </li>
               <li className="flex justify-start items-center gap-2">
                 <span className="text-[#f9feff] text-sm hover:text-[#7daaaa] transition duration-200 font-semibold">
-                  1734 Stonecoal Road
+                  BioInformatics Research Lab (BRL)
                 </span>
               </li>
               <li className="flex justify-start items-center gap-2">
                 <span className="text-[#f9feff] text-sm hover:text-[#7daaaa] transition duration-200 font-semibold">
-                  +021-95-51-84
+                  Phone: +92-41-9201919
                 </span>
               </li>
               <li className="flex justify-start items-center gap-2">
                 <span className="text-[#f9feff] text-sm hover:text-[#7daaaa] transition duration-200 font-semibold">
-                  email@email.com
+                  Email: amen.shamim@uaf.edu.pk
                 </span>
               </li>
             </ul>
