@@ -47,8 +47,8 @@ const Homeobj = () => {
             </li>
             <li>
               The correlation coefficient between temperature and conformational
-              flexibility is represented by Root Mean Square Deviation (RMSD)
-              in MD simulation.
+              flexibility is represented by Root Mean Square Deviation (RMSD) in
+              MD simulation.
             </li>
           </ul>
         </div>
