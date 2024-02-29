@@ -54,8 +54,8 @@ const Homeobj = () => {
             </ul>
           </div>
         </div>
-        <div className=" flex flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full ">
-          <div className="w-1/2">
+        <div className=" flex flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full m-10 ">
+          <div className="w-1/2 p-10">
             <Image
               src={homeimge2}
               alt="Home image"
@@ -64,7 +64,7 @@ const Homeobj = () => {
               className="rounded-2xl"
             />
           </div>
-          <div className="w-1/2 rounded-lg px-4 text-black pt-2">
+          <div className="w-1/2 rounded-lg px-4 text-black pt-7">
             <h1 className="text-black font-semibold">
               Unveiling the Secrets of DNA: Exploring I-Motif Structural
               Dynamics for Enhanced Biological Insights and Therapeutic
