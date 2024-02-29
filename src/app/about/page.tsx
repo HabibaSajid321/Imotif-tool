@@ -7,6 +7,7 @@ import CasDirector from "../../../public/assets/DrSultan3.jpg";
 import Mamimg from "../../../public/assets/mamAmen.jpg";
 import HSimg from "../../../public/assets/hassanimg3.jpg";
 import Footer from "@/components/footer/Footer";
+import myImage from "../../../public/assets/myimg2.jpg";
 
 const About = () => {
   return (
@@ -85,7 +86,7 @@ const About = () => {
                   Prof. Dr. Ijaz Ahmad Bhatti
                 </h1>
                 <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left">
-                  Executive Director
+                  Executive Director EFS
                 </h3>
                 <p className="text-black pt-4 md:text-sm text-xs md:pl-5 hidden md:block text-justify ">
                   The Director of the Endowment Fund Secretariat and Dean
@@ -233,16 +234,19 @@ const About = () => {
               </div>
             </div>
           </div>
-          {/* <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full"> */}
-          {/* <div className="w-1/2"> */}
-          {/* <Image */}
-          {/* // className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl " */}
-          {/* // src={HSimg} */}
-          {/* // alt="about" */}
-          {/* // loading="eager" */}
-          {/* // /> */}
-          {/* </div> */}
-          {/* </div> */}
+          <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full">
+            <div className="w-1/2">
+              <Image
+                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
+                src={myImage}
+                alt="about"
+                loading="eager"
+              />
+              <h1 className="text-[#1f7f6d] md:font-semibold font-medium md:text-xl text-sm  text-left  pt-4 pl-16">
+                Habiba Sajid
+              </h1>
+            </div>
+          </div>
         </div>
         <div></div>
         <div className="pt-8">
