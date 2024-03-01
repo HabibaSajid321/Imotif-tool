@@ -234,7 +234,19 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full">
+          <div className="flex md:px-36 px-10  p-9 flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full justify-between">
+            <div className="w-1/2">
+              <Image
+                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
+                src={myImage}
+                alt="about"
+                loading="eager"
+              />
+              <h1 className="text-[#1f7f6d] md:font-semibold font-medium md:text-xl text-sm  text-left  pt-4 pl-16">
+                Habiba Sajid
+              </h1>
+            </div>
+
             <div className="w-1/2">
               <Image
                 className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
