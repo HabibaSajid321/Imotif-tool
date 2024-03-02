@@ -4,8 +4,8 @@ import homeimg1 from "../../../public/assets/home2.jpg";
 import homeimge2 from "../../../public/assets/home3.jpg";
 const Homeobj = () => {
   return (
-    <div className="flex flex-col bg-gradient-to-b from-yellow-50 via-green-50 to-blue-50 ">
-      <div className="flex flex-col items-center justify-center md:gap-5 pt-8 ">
+    <div className="flex flex-col bg-gradient-to-b from-[#CAE4FF] via-green-50 to-blue-50 ">
+      <div className="flex flex-col items-center justify-center md:gap-5 pt-16 ">
         <div>
           <h1 className="text-[#404040]  md:text-5xl text-xl text-center font-bold ">
             Data Analytics
@@ -19,8 +19,8 @@ const Homeobj = () => {
         </p>
       </div>
       <div className="flex flex-col justify-center items-center w-full ">
-        <div className=" flex flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full p-6 ">
-          <div className="w-1/2">
+        <div className=" flex flex-row border-2 border-gray-300 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full p-6 ">
+          <div className="w-1/2 ">
             <Image
               src={homeimg1}
               alt="Home image"
@@ -29,7 +29,7 @@ const Homeobj = () => {
               className="rounded-2xl"
             />
           </div>
-          <div className="w-1/2 rounded-lg px-4 text-black pt-6 ">
+          <div className="w-1/2 rounded-lg px-4 text-black pt-6   ">
             <p className=" flex justify-start content-center  pt-4 font-bold px-2">
               Introducing MD-TSPM: A Computational Platform Utilizing Molecular
               Dynamics Simulation for Prediction Thermal Stability of
@@ -54,8 +54,8 @@ const Homeobj = () => {
             </ul>
           </div>
         </div>
-        <div className=" flex flex-row border-2 border-yellow-200 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full m-10 ">
-          <div className="w-1/2 p-10">
+        <div className=" flex flex-row border-2 border-gray-300 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full m-10 p-4 ">
+          <div className="w-1/2 pt-3">
             <Image
               src={homeimge2}
               alt="Home image"
@@ -64,7 +64,7 @@ const Homeobj = () => {
               className="rounded-2xl"
             />
           </div>
-          <div className="w-1/2 rounded-lg px-4 text-black pt-7">
+          <div className="w-1/2 rounded-lg px-4 text-black pt-3  ">
             <h1 className="text-black font-semibold">
               Unveiling the Secrets of DNA: Exploring I-Motif Structural
               Dynamics for Enhanced Biological Insights and Therapeutic

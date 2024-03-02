@@ -54,7 +54,7 @@ const Analyze = () => {
   };
 
   return (
-    <div>
+    <div className="bg-gradient-to-b from-[#CAE4FF] via-green-50 to-blue-50">
       <Navbar />
       <div className="flex justify-center content-center text-[#030303] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-9 bg-gray-200">
         Sequence Analyzer
@@ -65,7 +65,7 @@ const Analyze = () => {
             <div className="w-1/3 font-semibold md:text-xl text-sm ">
               <label>C-Range:</label>
               <select name="C-Range" id="c-range">
-                {Array.from(Array(30).keys()).map((index) => (
+                {Array.from(Array(4).keys()).map((index) => (
                   <option key={index + 1} value={index + 1}>
                     {index + 1}
                   </option>
@@ -75,7 +75,7 @@ const Analyze = () => {
             <div className="w-1/3 font-semibold md:text-xl text-sm ">
               <label>Loop Size:</label>
               <select name="C-Range" id="c-range">
-                {Array.from(Array(30).keys()).map((index) => (
+                {Array.from(Array(10).keys()).map((index) => (
                   <option key={index + 1} value={index + 1}>
                     {index + 1}
                   </option>

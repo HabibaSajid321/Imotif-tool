@@ -33,13 +33,13 @@ const Homepage: FC = () => {
           <div className="w-1/2 px-28">
             <div className="flex flex-col items-center text-center justify-center content-center pt-46 md:h-[610px] h-[600px] relative z-10 ">
               {" "}
-              <div className="bg-white bg-opacity-30 backdrop-filter backdrop-blur-md  rounded-2xl flex flex-col items-center text-center justify-center content-center p-4 ">
+              <div className=" shadow-2xl bg-opacity-30   rounded-2xl flex flex-col items-center text-center justify-center content-center p-4 ">
                 <p className="text-black md:text-4xl text-[20px]  font-semibold  leading-relaxed ">
                   MD-TSPM: Thermal Stability Prediction Method for I-motif
                 </p>
                 <div className="pt-12">
                   <button
-                    className="flex items-center bg-gradient-to-r from-gray-800 via-green-800 to-cyan-900 w-full text-[#efe8fd] md:text-2xl text-lg md:px-4 px-6 md:py-1 rounded-full hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 bg-opacity-50 backdrop-filter backdrop-blur-md"
+                    className="flex items-center bg-gradient-to-r from-gray-800 via-green-800 to-cyan-900 w-full text-[#efe8fd] text-xl px-3 md:py-1 rounded-full hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 bg-opacity-50 backdrop-filter backdrop-blur-md"
                     onClick={handleClick}
                   >
                     Go to Submission portal
