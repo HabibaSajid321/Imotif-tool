@@ -1,66 +1,57 @@
 "use client";
-import Footer from "@/components/footer/Footer";
+import React, { FC, useState } from "react";
 import Navbar from "@/components/navbar/Navbar";
-import React, { FC } from "react";
+import C3280k from "../../../public/assets/C3-280KAsset3.png";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
-import Homeobj from "@/components/home/Homeobj";
-import Link from "next/navigation";
-import router, { useRouter } from "next/navigation";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { ChartData } from "@/utils/chartData";
+import Footer from "@/components/footer/Footer";
 
-const Homepage: FC = () => {
+const Innovation: FC = () => {
   const router = useRouter();
-  const handleClick = () => {
-    return router.push("/analyzer");
-  };
+  const [blogs, setBlogs] = useState<any>(ChartData);
 
   return (
-    <div className="flex flex-col text-white ">
-      <div className="relative bg-gray-200 md:bg-gradient-to-b from-yellow-50 via-green-50 to-blue-50 ">
-        <div className="">
-          <Navbar />
-        </div>
-        <div className="relative">
-          <video
-            autoPlay
-            muted
-            loop
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/assets/animation/moviefinal.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div className="w-1/2 px-28">
-            <div className="flex flex-col items-center text-center justify-center content-center pt-46 md:h-[610px] h-[600px] relative z-10 ">
-              {" "}
-              <div className="container glass shadow-2xl bg-opacity-30 rounded-md flex flex-col items-center text-center justify-center content-center p-4 ">
-                <p className="text-black md:text-4xl text-[20px]  font-semibold  leading-relaxed ">
-                  MD-TSPM: Thermal Stability Prediction Method for I-motif
-                </p>
-                <div className="pt-12">
-                  <button
-                    className="flex items-center bg-gradient-to-r from-gray-800 via-green-800 to-cyan-900 w-full text-[#efe8fd] text-xl px-3 md:py-1 rounded-full hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 bg-opacity-50 backdrop-filter backdrop-blur-md"
-                    onClick={handleClick}
-                  >
-                    Go to Submission portal
-                    <span className="pl-4">
-                      <FaArrowRight />
-                    </span>
-                  </button>
+    <div className="bg-gradient-to-b from-[#CAE4FF] via-green-100 to-blue-100">
+      <Navbar />
+      <div className="flex justify-center content-center text-[#030303] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-9 ">
+        Innovation
+      </div>
+      <div className="text-gray-600 text-center pt-8 md:text-2xl text-lg md:font-bold font-semibold ">
+        <h1>Temperature dependent RMSD plots of IMOTIF Structures </h1>
+      </div>
+      <div className="flex justify-center content-center  items-center ">
+        <div className="flex items-center justify-center gap-5 flex-wrap md:py-10 py-14 md:px-28 px-10 content-center ">
+          {blogs.map((val: any, i: number) => (
+            <div
+              key={i}
+              onClick={() => router.push(`/innovation/${val.id}`)}
+              className="md:w-[310px] md:h-64 h-64  cursor-pointer  shadow-lg border border-gray-300 hover:border-[2px] rounded-[4px] flex flex-col transition-all duration-300 "
+            >
+              <div className=" flex justify-center items-center p-5">
+                <Image
+                  src={val.blogSrc}
+                  alt="blog_image"
+                  width={300}
+                  height={300}
+                  loading="eager"
+                />
+              </div>
+              <div className="px-6">
+                <div className="bg-white md:h-20 h-16 w-full rounded-lg">
+                  <p className="capitalize text-black md:text-lg text-center font-semibold px-2">
+                    {val.title}
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
-
-      <div className="">
-        <Homeobj />
-      </div>
-
       <Footer />
     </div>
   );
 };
 
-export default Homepage;
+export default Innovation;
