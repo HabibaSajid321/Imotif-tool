@@ -54,86 +54,90 @@ const Analyze = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#CAE4FF] via-green-50 to-blue-50">
-      <Navbar />
-      <div className="flex justify-center content-center text-[#030303] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-9 bg-gray-200">
-        Sequence Analyzer
-      </div>
-      <div className="bg-white pt-8">
-        <div className="flex flex-col md:m-9 m-5 gap-8">
-          <div className="flex w-full justify-between text-black md:px-8 px-2 bg-gray-200 p-3 rounded-md border border-gray-500">
-            <div className="w-1/3 font-semibold md:text-xl text-sm ">
-              <label>C-Range:</label>
-              <select name="C-Range" id="c-range">
-                {Array.from(Array(4).keys()).map((index) => (
-                  <option key={index + 1} value={index + 1}>
-                    {index + 1}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="w-1/3 font-semibold md:text-xl text-sm ">
-              <label>Loop Size:</label>
-              <select name="C-Range" id="c-range">
-                {Array.from(Array(10).keys()).map((index) => (
-                  <option key={index + 1} value={index + 1}>
-                    {index + 1}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="w-1/3 font-semibold md:text-xl text-sm ">
-              <label>Temp:</label>
-              <select name="C-Range" id="c-range">
-                <option value="temp280k">280k</option>
-                <option value="temp300k">300k</option>
-                <option value="temp300k">320k</option>
-                <option value="temp300k">340k</option>
-                <option value="temp300k">360k</option>
-              </select>
-            </div>
+    <div className="bg-gradient-to-b from-[#CAE4FF] via-green-100 to-blue-100">
+      <div className="sbg-gradient-to-b from-[#CAE4FF] via-green-100 to-blue-100">
+        <Navbar />
+        <div className="bg-gradient-to-b from-[#CAE4FF] via-green-100 to-blue-100">
+          <div className="flex justify-center content-center text-[#030303] bg-gradient-to-b from-[#CAE4FF] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-9 ">
+            Sequence Analyzer
           </div>
-          <div>
-            <h1 className="text-[#b83f3f] font-semibold">
-              free till trail version ends
-            </h1>
-            <div className=" bg-gray-200 p-3 rounded-md border h-32 text-black  border-gray-500 ">
-              <input
-                type="text"
-                placeholder="Example CCC TTT CCC TTT CCC TTT "
-                className="font-xl w-full whitespace-normal h-10 "
-                value={sequence}
-                onChange={(e) => setSequence(e.target.value)}
-              />
-            </div>
-          </div>
-          <div>
-            <form onSubmit={handleSubmit}>
-              <button
-                type="submit"
-                className="flex items-center justify-center md:font-semibold font-normal text-gray-100 
+          <div className=" pt-8">
+            <div className="flex flex-col md:m-9 m-5 gap-8">
+              <div className="flex w-full justify-between text-black md:px-8 px-2 bg-gray-200 p-3 rounded-md border border-gray-500">
+                <div className="w-1/3 font-semibold md:text-xl text-sm ">
+                  <label>C-Range:</label>
+                  <select name="C-Range" id="c-range" className="rounded-md">
+                    {Array.from(Array(4).keys()).map((index) => (
+                      <option key={index + 1} value={index + 1}>
+                        {index + 1}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="w-1/3 font-semibold md:text-xl text-sm ">
+                  <label>Loop Size:</label>
+                  <select name="C-Range" id="c-range" className="rounded-md">
+                    {Array.from(Array(10).keys()).map((index) => (
+                      <option key={index + 1} value={index + 1}>
+                        {index + 1}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="w-1/3 font-semibold md:text-xl text-sm ">
+                  <label>Temp:</label>
+                  <select name="C-Range" id="c-range" className="rounded-md">
+                    <option value="temp280k">280k</option>
+                    <option value="temp300k">300k</option>
+                    <option value="temp300k">320k</option>
+                    <option value="temp300k">340k</option>
+                    <option value="temp300k">360k</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <h1 className="text-[#b83f3f] font-semibold">
+                  free till trail version ends
+                </h1>
+                <div className=" bg-gray-200 p-3 rounded-md border h-32 text-black  border-gray-500 ">
+                  <input
+                    type="text"
+                    placeholder="    Example CCCTTTCCCTTTCCCTTT "
+                    className="font-xl w-full whitespace-normal h-10 rounded-lg"
+                    value={sequence}
+                    onChange={(e) => setSequence(e.target.value)}
+                  />
+                </div>
+              </div>
+              <div>
+                <form onSubmit={handleSubmit}>
+                  <button
+                    type="submit"
+                    className="flex items-center justify-center md:font-semibold font-normal text-gray-100 
                    bg-gradient-to-r from-gray-500 via-green-700 to-cyan-600 md:w-40 w-32 md:px-2 px-1 py-1 
                    rounded-md hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black 
                   transition-all duration-300"
-              >
-                Submit Query
-              </button>
-            </form>
-          </div>
-          {displayedImage && (
-            <div className="md:pt-6 pt-2 px-10 flex justify-center content-center flex-wrap ">
-              <Image
-                width={900}
-                height={800}
-                src={displayedImage}
-                alt="Displayed"
-                // className="md:w-[600px] w-[220px] md:h-[500px] h-[300px]"
-              />
+                  >
+                    Submit Query
+                  </button>
+                </form>
+              </div>
+              {displayedImage && (
+                <div className="md:pt-6 pt-2 px-10 flex justify-center content-center flex-wrap ">
+                  <Image
+                    width={900}
+                    height={800}
+                    src={displayedImage}
+                    alt="Displayed"
+                    // className="md:w-[600px] w-[220px] md:h-[500px] h-[300px]"
+                  />
+                </div>
+              )}
             </div>
-          )}
-        </div>
-        <div className="">
-          <Footer />
+            <div className="">
+              <Footer />
+            </div>
+          </div>
         </div>
       </div>
     </div>

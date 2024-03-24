@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import VCimage from "../../../public/assets/vc.jpg";
+import VCimage from "../../../public/assets/charts/vc1.jpg";
+
 import Navbar from "@/components/navbar/Navbar";
 import EfsDImage from "../../../public/assets/efs4.jpg";
 import CasDirector from "../../../public/assets/DrSultan3.jpg";
 import Mamimg from "../../../public/assets/mamAmen.jpg";
-import HSimg from "../../../public/assets/hassanimg3.jpg";
+import HSimg from "../../../public/assets/charts/hassanimg2.jpg";
 import Footer from "@/components/footer/Footer";
-import myImage from "../../../public/assets/myimg2.jpg";
 
 const About = () => {
   return (
@@ -28,7 +28,7 @@ const About = () => {
           <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-gray-300 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full ">
             <div className="w-1/3">
               <Image
-                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
+                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl shadow-3xl"
                 src={VCimage}
                 alt="about"
                 loading="eager"
@@ -74,7 +74,7 @@ const About = () => {
           <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-gray-300 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full  ">
             <div className="w-1/3">
               <Image
-                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl"
+                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl shadow-3xl"
                 src={EfsDImage}
                 alt="about"
                 loading="eager"
@@ -111,7 +111,7 @@ const About = () => {
           <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-gray-300 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full ">
             <div className="w-1/3">
               <Image
-                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl"
+                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl shadow-3xl"
                 src={CasDirector}
                 alt="about"
                 loading="eager"
@@ -161,7 +161,7 @@ const About = () => {
           <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-gray-300 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full">
             <div className="w-1/3 pt-8">
               <Image
-                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
+                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl shadow-3xl "
                 src={Mamimg}
                 alt="about"
                 loading="eager"
@@ -206,7 +206,7 @@ const About = () => {
           <div className="flex md:px-32 px-10  p-9 flex-row border-2 border-gray-300 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full ">
             <div className="w-1/3">
               <Image
-                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl "
+                className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl shadow-3xl"
                 src={HSimg}
                 alt="about"
                 loading="eager"

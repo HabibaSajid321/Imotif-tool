@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="flex flex-wrap flex-row justify-center md:items-center md:bg-gradient-to-b from-yellow-50 via-green-50 to-blue-50     w-full md:p-4 p-8  relative border-b-2 border-gray-400 shadow-lg">
+    <header className="flex flex-wrap flex-row justify-center md:items-center bg-white   w-full md:p-4 p-8  relative  border-b-2 border-gray-400 shadow-2xl">
       <div className="hidden md:flex absolute left-0 items-center pl-3">
         <Image src={Uaflogo} alt="UAF logo" width={60} height={40} />
       </div>

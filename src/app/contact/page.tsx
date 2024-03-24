@@ -18,11 +18,11 @@ const ContactForm = () => {
   }
 
   return (
-    <div>
+    <div className="bg-gradient-to-b from-[#CAE4FF] via-green-100 to-blue-100">
       <div>
         <Navbar />
       </div>
-      <h1 className="flex justify-center content-center text-[#030303] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-12 bg-gray-200 ">
+      <h1 className="flex justify-center content-center text-[#030303] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-12  ">
         {" "}
         Contact us
       </h1>
@@ -45,13 +45,13 @@ const ContactForm = () => {
               id="name"
               type="text"
               name="name"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
-focus:outline-none focus:shadow-outline"
-              placeholder="enter your name"
+              className="shadow appearance-none border  w-full py-2 px-3 text-gray-700 leading-tight 
+focus:outline-none focus:shadow-outline rounded-md"
+              placeholder="Enter your name"
             />
             <label
               htmlFor="email"
-              className="block text-gray-700 font-bold mb-2"
+              className="block text-gray-700 font-bold mb-email"
             >
               Email Address
             </label>
@@ -59,7 +59,7 @@ focus:outline-none focus:shadow-outline"
               id="email"
               type="email"
               name="email"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className=" rounded-md shadow appearance-none border  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Your email address"
             />
             <ValidationError
@@ -79,7 +79,7 @@ focus:outline-none focus:shadow-outline"
             <textarea
               id="message"
               name="message"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-none"
+              className=" rounded-md shadow appearance-none border  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-none"
               placeholder="Your message"
             ></textarea>
             <ValidationError

@@ -20,33 +20,38 @@ const Homepage: FC = () => {
         <div className="">
           <Navbar />
         </div>
-        <div className="relative">
-          <video
-            autoPlay
-            muted
-            loop
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/assets/animation/moviefinal.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div className="w-1/2 px-28">
-            <div className="flex flex-col items-center text-center justify-center content-center pt-46 md:h-[610px] h-[600px] relative z-10 ">
-              {" "}
-              <div className=" shadow-2xl bg-opacity-30   rounded-2xl flex flex-col items-center text-center justify-center content-center p-4 ">
-                <p className="text-black md:text-4xl text-[20px]  font-semibold  leading-relaxed ">
-                  MD-TSPM: Thermal Stability Prediction Method for I-motif
-                </p>
-                <div className="pt-12">
-                  <button
-                    className="flex items-center bg-gradient-to-r from-gray-800 via-green-800 to-cyan-900 w-full text-[#efe8fd] text-xl px-3 md:py-1 rounded-full hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 bg-opacity-50 backdrop-filter backdrop-blur-md"
-                    onClick={handleClick}
-                  >
-                    Go to Submission portal
-                    <span className="pl-4">
-                      <FaArrowRight />
-                    </span>
-                  </button>
+        <div className="shadow-lg">
+          <div className="relative ">
+            <video
+              autoPlay
+              muted
+              loop
+              className="absolute inset-0 w-full md:h-[590px] h-[200px] object-cover"
+            >
+              <source src="/assets/animation/moviefinal.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="md:w-1/2 w-1/3 md:px-28 px-24">
+              <div className="flex flex-col items-center text-center justify-center content-center pt-46 md:h-[590px] h-[200px] relative z-10 ">
+                {" "}
+                <div className=" shadow-2xl bg-opacity-30   rounded-2xl flex flex-col items-center text-center justify-center content-center md:p-4 p-2 ">
+                  <p className="text-black md:text-4xl text-[10px]  font-semibold  leading-relaxed ">
+                    MD-TSPM: Thermal Stability Prediction Method for I-motif
+                  </p>
+                  <div className="md:pt-12 pt-4">
+                    <button
+                      className="flex items-center bg-gradient-to-r from-gray-800 via-green-800 to-cyan-900 w-full
+                     text-[#efe8fd] md:text-xl text-xs md:px-3 px-2 md:py-1 py-0 md:rounded-full rounded-2xl 
+                     hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 
+                     bg-opacity-50 backdrop-filter backdrop-blur-md justify-center md:max-w-md mx-auto"
+                      onClick={handleClick}
+                    >
+                      Go to Analyzer
+                      <span className="md:pl-4 pl-8">
+                        <FaArrowRight />
+                      </span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
