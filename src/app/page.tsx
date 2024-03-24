@@ -35,16 +35,20 @@ const Homepage: FC = () => {
               <div className="flex flex-col items-center text-center justify-center content-center pt-46 md:h-[590px] h-[200px] relative z-10 ">
                 {" "}
                 <div className=" shadow-2xl bg-opacity-30   rounded-2xl flex flex-col items-center text-center justify-center content-center md:p-4 p-2 ">
-                  <p className="text-black md:text-4xl text-[10px]  font-semibold  leading-relaxed ">
+                  <p className="text-black md:text-3xl text-[10px]  font-semibold  leading-relaxed ">
                     MD-TSPM: Thermal Stability Prediction Method for I-motif
                   </p>
 
                   <div className="md:pt-12 pt-4">
                     <button
-                      className="flex items-center bg-gradient-to-r from-gray-800 via-green-800 to-cyan-900 w-full text-[#efe8fd] md:text-xl text-xs md:px-3 px-2 md:py-1 py-0 md:rounded-full rounded-2xl hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 bg-opacity-50 backdrop-filter backdrop-blur-md justify-center md:max-w-md mx-auto"
+                      className="flex items-center bg-gradient-to-r from-gray-800 via-green-800 to-cyan-900 w-full
+        text-[#efe8fd] md:text-xl text-xs md:px-3 px-2 md:py-1 py-0 md:rounded-full rounded-2xl 
+        hover:from-gray-300 hover:via-green-400 hover:to-cyan-500 hover:text-black transition-all duration-300 
+        bg-opacity-50 backdrop-filter backdrop-blur-md justify-center md:max-w-md mx-auto
+        md:w-auto" // Adjusting width based on screen size
                       onClick={handleClick}
                     >
-                      <span className="flex-grow">Go to Analyzer</span>
+                      Go to Analyzer
                       <span className="md:pl-4 pl-8">
                         <FaArrowRight />
                       </span>

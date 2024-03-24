@@ -12,36 +12,33 @@ const Footer: FC = () => {
 
   return (
     <>
-      <div className="bg-gray-700 flex  justify-center items-center py-10 border-t-[3px] border-t-[#363636] px-28">
-        <div className="w-full md:w-[1170px] flex  gap-6 lg:gap-0 lg:flex-row lg:justify-between items-center lg:px-0 px-5 ">
-          <div className="w-full lg:w-1/2  ">
-            <h1 className="font-bold uppercase text-white pb-4 md:pb-7 text-xl">
+      <div className="bg-gray-700 flex justify-center items-center py-10 border-t-3 border-t-[#363636] px-5 md:px-10 lg:px-28">
+        <div className="w-full md:w-[1170px] flex flex-col md:flex-row md:justify-between justify-center items-center md:pl-0 pl-12">
+          <div className="w-full lg:w-1/2 pb-6 md:pb-0 ">
+            <h1 className="font-bold uppercase text-white pb-4 md:pb-7 md:text-xl text-base ">
               About us
             </h1>
-            <ul className="flex flex-col gap-4 ">
+            <ul className="flex flex-col gap-4">
               <li>
-                <p className="text-[#f9feff] text-sm text-left font-semibold"></p>
-              </li>
-              <li className="flex justify-start items-center gap-2">
-                <span className="text-[#f9feff] text-sm hover:text-[#7daaaa] transition duration-200 font-semibold">
+                <p className="text-[#f9feff] md:text-sm text-xs text-left  font-semibold">
                   BioInformatics Research Lab (BRL)
-                </span>
+                </p>
               </li>
-              <li className="flex justify-start items-center gap-2">
-                <span className="text-[#f9feff] text-sm hover:text-[#7daaaa] transition duration-200 font-semibold">
+              <li>
+                <p className="text-[#f9feff]  md:text-sm text-xs text-left font-semibold">
                   Phone: +92-41-9201919
-                </span>
+                </p>
               </li>
-              <li className="flex justify-start items-center gap-2">
-                <span className="text-[#f9feff] text-sm hover:text-[#7daaaa] transition duration-200 font-semibold">
+              <li>
+                <p className="text-[#f9feff] md:text-sm text-xs text-left font-semibold">
                   Email: amen.shamim@uaf.edu.pk
-                </span>
+                </p>
               </li>
             </ul>
           </div>
 
           <div className="w-full lg:w-1/2">
-            <h1 className="font-bold uppercase text-white  pb-4 md:pb-7 text-xl">
+            <h1 className="font-bold uppercase text-white pb-4 md:pb-7 md:text-xl text-base">
               Information
             </h1>
             <ul className="flex flex-col gap-2 md:gap-3 font-semibold">
@@ -49,7 +46,7 @@ const Footer: FC = () => {
                 <li key={i}>
                   <Link
                     href={val.path}
-                    className="text-[#f9feff] text-sm hover:text-[#7daaaa] transition duration-200"
+                    className="text-[#f9feff] md:text-sm text-xs hover:text-[#7daaaa] transition duration-200"
                   >
                     {val.name}
                   </Link>
