@@ -18,7 +18,7 @@ const Innovation: FC = () => {
       <div className="flex justify-center content-center text-[#030303] font-semibold md:text-5xl text-3xl md:h-36 h-28 text-center pt-9 ">
         Innovation
       </div>
-      <div className="text-gray-600 text-center pt-8 md:text-2xl text-lg md:font-bold font-semibold ">
+      <div className="text-[#404040]  md:text-2xl text-xl text-center font-bold px-5 md:px-0">
         <h1>Temperature dependent RMSD plots of IMOTIF Structures </h1>
       </div>
       <div className="flex justify-center content-center  items-center ">
