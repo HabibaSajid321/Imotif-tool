@@ -10,8 +10,8 @@ const ContactForm = () => {
   if (state.succeeded) {
     return (
       <div className="flex items-center justify-center mt-10">
-        <p className="text-[#9f3941] font-popins font-bold text-4xl">
-          Thanks for joining!
+        <p className="text-[#02020200] font-popins font-bold text-4xl">
+          Your Query has been submitted.
         </p>
       </div>
     );
@@ -45,7 +45,7 @@ const ContactForm = () => {
               id="name"
               type="text"
               name="name"
-              className="shadow appearance-none border  w-full py-2 px-3 text-gray-700 leading-tight 
+              className="shadow appearance-none border  w-full py-2 px-3 text-black leading-tight 
 focus:outline-none focus:shadow-outline rounded-md"
               placeholder="Enter your name"
             />
@@ -59,7 +59,7 @@ focus:outline-none focus:shadow-outline rounded-md"
               id="email"
               type="email"
               name="email"
-              className=" rounded-md shadow appearance-none border  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className=" rounded-md shadow appearance-none border  w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Your email address"
             />
             <ValidationError
@@ -79,7 +79,7 @@ focus:outline-none focus:shadow-outline rounded-md"
             <textarea
               id="message"
               name="message"
-              className=" rounded-md shadow appearance-none border  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-none"
+              className=" rounded-md shadow appearance-none border  w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline h-32 resize-none"
               placeholder="Your message"
             ></textarea>
             <ValidationError

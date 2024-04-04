@@ -8,14 +8,14 @@ const Homeobj = () => {
     <div className="flex flex-col bg-gradient-to-b from-[#CAE4FF] via-green-50 to-blue-50 ">
       <div className="flex flex-col items-center justify-center md:gap-5 gap-3 pt-16 ">
         <div>
-          <h1 className="text-[#404040]  md:text-5xl text-xl text-center font-bold ">
+          <h1 className="text-[#1B7341]  md:text-5xl text-xl text-center font-bold ">
             Data Analytics
-            <span className="inline text-[#1B7341]"> is our future</span>
+            <span className="inline text-[#404040]"> is our future</span>
           </h1>
         </div>
 
         <p className="text-[#404040]  md:text-2xl text-[10px] md:font-medium  text-center">
-          A Web Portal For Identification Of Thermal Stability Of Non-Canonical
+          A Web Portal for Identification of Thermal Stability of Non-Canonical
           Structures
         </p>
       </div>

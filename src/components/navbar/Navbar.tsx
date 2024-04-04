@@ -31,30 +31,30 @@ const Navbar = () => {
       <nav
         className={`${
           showLink ? "" : "hidden"
-        } md:inline-flex absolute md:relative top-16 left-0 md:top-0 z-20 flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-gray-200 shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0`}
+        } md:inline-flex absolute md:relative top-16 left-0 md:top-0 z-20 flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md md:border-none border border-gray-200 md:shadow-none md:bg-transparent p-6 pt-0 md:p-0`}
       >
         <Link href="/">
-          <h1 className="block py-1 px-2 md:text-[20px] text-gray-600 hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
+          <h1 className="block py-1 px-2 md:text-[20px] text-black hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
             Home
           </h1>
         </Link>
         <Link href="/analyzer">
-          <h1 className="block py-1 px-2 md:text-[20px] text-gray-600 hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
+          <h1 className="block py-1 px-2 md:text-[20px] text-black hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
             Analyzer
           </h1>
         </Link>
         <Link href="/innovation">
-          <h1 className="block py-1 px-2 md:text-[20px] text-gray-600 hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
+          <h1 className="block py-1 px-2 md:text-[20px] text-black hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
             Innovation
           </h1>
         </Link>
         <Link href="/about">
-          <h1 className="block py-1 px-2 md:text-[20px] text-gray-600 hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
+          <h1 className="block py-1 px-2 md:text-[20px] text-black hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
             About
           </h1>
         </Link>
         <Link href="/contact">
-          <h1 className="block py-1 px-2 md:text-[20px] text-gray-600 hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
+          <h1 className="block py-1 px-2 md:text-[20px] text-black hover:bg-[#d4d6d388] md:hover:text-gray-600 hover:text-black rounded-md">
             Contact
           </h1>
         </Link>
