@@ -160,8 +160,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row md:px-32 px-10  p-9  border-2 border-gray-300 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full ">
-            <div className="md:w-1/3 w-full">
+          <div className="flex flex-col md:flex-row md:px-32 px-10  p-9  border-2 border-gray-300 m-10 gap-10 rounded-2xl shadow-2xl lg:w-[1180px] w-full  ">
+            <div className="md:w-1/3 w-full pt-8">
               <Image
                 className="md:w-[280px] w-[140px] md:h-[270px] h-[120px] md:rounded-full rounded-2xl shadow-3xl"
                 src={HSimg}
@@ -169,15 +169,15 @@ const About = () => {
                 loading="eager"
               />
             </div>
-            <div className="md:w-2/3 w-full md:pt-8 pt-0">
-              <div className="flex flex-col justify-center content-center   ">
+            <div className="md:w-2/3 w-full ">
+              <div className="flex flex-col justify-center content-center md:pt-10 pt-0 ">
                 <h1 className="text-[#1f7f6d] md:font-semibold font-medium md:text-xl text-sm md:px-[20px] px-4 text-left  ">
                   Muhammad Hassan
                 </h1>
                 <h3 className="text-[#565757]  md:text-base text-xs md:px-[20px] px-4 text-left ">
                   Researcher
                 </h3>
-                <p className="text-black pt-4 md:text-sm text-xs text-justify  ">
+                <p className="text-black pt-4 md:text-base text-xs md:pl-5  text-justify  ">
                   Mr. Muhammad Hassan Butt, a distinguished fellow researcher
                   within this project, possesses expertise in the fields of
                   structural bioinformatics and bioinformatics data analysis.
