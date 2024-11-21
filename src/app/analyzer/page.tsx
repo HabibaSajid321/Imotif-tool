@@ -113,7 +113,7 @@ const Analyze = () => {
                     className="text-red-500 text-sm italic"
                   />
                 </div>
-                <div className="flex flex-col w-full text-black md:px-8 px-2 bg-gray-200 p-3 rounded-md border border-gray-500 gap-4">
+                <div className="flex  w-full text-black md:px-8 px-2 bg-gray-200 p-3 rounded-md border border-gray-500 gap-4">
   <div className="w-full font-semibold md:text-xl text-sm">
     <label>C-Range:</label>
     <select name="C-Range" id="c-range" className="rounded-md w-full">
