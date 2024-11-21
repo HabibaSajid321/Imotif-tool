@@ -113,39 +113,38 @@ const Analyze = () => {
                     className="text-red-500 text-sm italic"
                   />
                 </div>
-                <div className="flex w-full justify-between text-black md:px-8 px-2 bg-gray-200 p-3 rounded-md border border-gray-500 ">
-                  <div className="w-1/3 font-semibold md:text-xl text-sm ">
-                    <label>C-Range:</label>
-                    <select name="C-Range" id="c-range" className="rounded-md">
-                      {Array.from(Array(4).keys()).map((index) => (
-                        <option key={index + 1} value={index + 1}>
-                          {index + 1}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                  <div className="w-1/3 font-semibold md:text-xl text-sm ">
-                    <label>Loop Size:</label>
-                    <select name="C-Range" id="c-range" className="rounded-md">
-                      {Array.from(Array(10).keys()).map((index) => (
-                        <option key={index + 1} value={index + 1}>
-                          {index + 1}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                  <div className="w-1/3 font-semibold md:text-xl text-sm ">
-                    <label>Temp:</label>
-                    <select name="C-Range" id="c-range" className="rounded-md">
-                      <option value="temp280k">280k</option>
-                      <option value="temp300k">300k</option>
-                      <option value="temp300k">320k</option>
-                      <option value="temp300k">340k</option>
-                      <option value="temp300k">360k</option>
-                    </select>
-                  </div>
-                </div>
-
+                <div className="flex flex-col w-full text-black md:px-8 px-2 bg-gray-200 p-3 rounded-md border border-gray-500 gap-4">
+  <div className="w-full font-semibold md:text-xl text-sm">
+    <label>C-Range:</label>
+    <select name="C-Range" id="c-range" className="rounded-md w-full">
+      {Array.from(Array(4).keys()).map((index) => (
+        <option key={index + 1} value={index + 1}>
+          {index + 1}
+        </option>
+      ))}
+    </select>
+  </div>
+  <div className="w-full font-semibold md:text-xl text-sm">
+    <label>Loop Size:</label>
+    <select name="Loop Size" id="loop-size" className="rounded-md w-full">
+      {Array.from(Array(10).keys()).map((index) => (
+        <option key={index + 1} value={index + 1}>
+          {index + 1}
+        </option>
+      ))}
+    </select>
+  </div>
+  <div className="w-full font-semibold md:text-xl text-sm">
+    <label>Temp:</label>
+    <select name="Temp" id="temp" className="rounded-md w-full">
+      <option value="temp280k">280k</option>
+      <option value="temp300k">300k</option>
+      <option value="temp320k">320k</option>
+      <option value="temp340k">340k</option>
+      <option value="temp360k">360k</option>
+    </select>
+  </div>
+</div>
                 <div className="mb-6 ">
                   <label
                     htmlFor="message"
