@@ -126,7 +126,7 @@ const Analyze = () => {
                   </div>
                   <div className="w-1/3 font-semibold md:text-xl text-sm ">
                     <label>Loop Size:</label>
-                    <select name="C-Range" id="c-range" className="rounded-md">
+                    <select name="Loop-Size" id="loop-size" className="rounded-md">
                       {Array.from(Array(10).keys()).map((index) => (
                         <option key={index + 1} value={index + 1}>
                           {index + 1}
@@ -136,7 +136,7 @@ const Analyze = () => {
                   </div>
                   <div className="w-1/3 font-semibold md:text-xl text-sm ">
                     <label>Temp:</label>
-                    <select name="C-Range" id="c-range" className="rounded-md">
+                    <select name="Tempe" id="temp" className="rounded-md">
                       <option value="temp280k">280k</option>
                       <option value="temp300k">300k</option>
                       <option value="temp300k">320k</option>
